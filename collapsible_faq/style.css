@@ -52,7 +52,7 @@ body {
   }
 
   .faq-icon {
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     color: #555;
   }
@@ -61,7 +61,7 @@ body {
     display: none;
     padding: 15px;
     background: #fafafa;
-    font-size: 14px;
+    font-size: 15px;
     text-align: left;
     color: #555;
     line-height: 1.5;
