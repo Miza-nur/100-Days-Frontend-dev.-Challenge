@@ -9,7 +9,7 @@ function toggleAnswer(header) {
       icon.textContent = "+";
     } else {
       answer.style.display = "block";
-      icon.textContent = "-";
+      icon.textContent = "_";
     }
   }
 
