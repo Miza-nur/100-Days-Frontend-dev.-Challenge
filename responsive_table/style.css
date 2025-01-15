@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    
+    
+}
+
+body{
+    background-color: #f06292;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+.container{
+     
+    background-color: #fff;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    box-shadow: 100%;
+
+}
+.responsive-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  
+  
+}
+.responsive-table th,
+.responsive-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #ddd;
+}
+th{
+    
+    font-size: 15px;
+}
+td{
+    opacity: 50%;
+}
+.responsive-table tbody tr:hover {
+    background-color: #f1f1f1;
+  }
+
+
+  @media (max-width: 768px) {
+    .responsive-table th,td{
+        display: block;
+
+    }
+    .responsive-table th{
+        background-color: #c91919;
+
+    }
+    .responsive-table tbody tr:nth-child(even) {
+        background-color: #f1f1f1;
+    }
+    .responsive-table tbody tr:hover {
+        background-color: none;
+      }
+    
+}  
+
+@media (max-width: 850px){
+    .responsive-table td{
+        font-size: small;
+    }
+}
