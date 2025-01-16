@@ -10,11 +10,12 @@ body{
     height: 100vh;
     margin: 0;
     overflow: hidden;
+    
 
 }
 .container{
     display: flex;
-    width: 90vw;
+    
     
 }
 .card-plane{
@@ -38,4 +39,23 @@ span{
     font-size: 20px;
     left: 12px;
 }
+
+.card-plane.active{
+    flex:5;
+
+}
+.card-plane.active span{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
  
+
+@media(max-width: 480px){
+    .container{
+        width: 100vh;
+    }
+    .card-plane:nth-of-type(4),
+    .card-plane:nth-of-type(5){
+        display: none;
+    }
+}
