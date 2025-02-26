@@ -1,0 +1,9 @@
+.boxdiv{
+    text-align: center;
+    width: 500px;
+    height: 400px;
+    border: 1px solid ;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 50px;
+}
