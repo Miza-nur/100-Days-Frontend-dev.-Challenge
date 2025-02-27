@@ -16,10 +16,12 @@ const colorGenerator=()=>{
     
  }
 
+
+
  const copyColorCode =()=>{
     const rgbcode=document.getElementById('rgbcode');
     const copybtn =document.getElementById('copybtn');
-    copybtn.innerText='copied'
+    copybtn.innerText='Copied'
     const input=document.createElement('input')
     document.body.appendChild(input);
     input.value=rgbcode.innerText;
@@ -27,11 +29,11 @@ const colorGenerator=()=>{
     input.select();
     document.execCommand('copy');
     document.body.removeChild(input)
-
-
-
  }
- const click= document.getElementById('copybtn').addEventListener('click',()=>{
+
+
+
+ document.getElementById('copybtn').addEventListener('click',()=>{
     copyColorCode();
     
 
