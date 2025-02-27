@@ -1,0 +1,28 @@
+body{
+    text-align: center;
+    margin: 0 auto;
+    
+}
+#colordiv{
+    width: 200px;
+    height: 200px;
+    border: 1px solid ;
+    margin: 0 auto;
+}
+button{
+    margin: 20px;
+    width: 100px;
+    height: 30px;
+    font-size: larger;
+    font: bold;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(14, 59, 207, 0.815);
+}
+button:hover{
+    background-color: rgba(206, 133, 24, 0.623);
+
+}
+h1{
+    margin: 10px;
+}
