@@ -15,4 +15,25 @@ const colorGenerator=()=>{
     rgbcode.innerText=color
     
  }
- updataColor();
+
+ const copyColorCode =()=>{
+    const rgbcode=document.getElementById('rgbcode');
+    const copybtn =document.getElementById('copybtn');
+    copybtn.innerText='copied'
+    const input=document.createElement('input')
+    document.body.appendChild(input);
+    input.value=rgbcode.innerText;
+
+    input.select();
+    document.execCommand('copy');
+    document.body.removeChild(input)
+
+
+
+ }
+ const click= document.getElementById('copybtn').addEventListener('click',()=>{
+    copyColorCode();
+    
+
+  })
+
