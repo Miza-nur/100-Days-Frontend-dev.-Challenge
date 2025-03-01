@@ -1,0 +1,26 @@
+#div1{
+    width: auto;
+    height: auto;
+    margin: 4%;
+   
+}
+#task{
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+}
+button{
+    font-size: large;
+    background-color: white;
+    text-align: left;
+
+}
+ul{
+    list-style-type: number;
+    margin-left: 0%;
+    font-size: larger;
+}
+li{
+    margin-top: 10px;
+    word-spacing: 10px;
+}
