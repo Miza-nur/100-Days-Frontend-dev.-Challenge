@@ -9,8 +9,9 @@ const addclick = () => {
         li.innerHTML = `
             <input type="checkbox"> 
             ${taskinput}
-            <button onclick="editTask(this)"> <i class="fa-solid fa-pen-to-square"></i></button> 
-            <button onclick="deleteTask(this)"> <i class="fa-solid fa-trash"></i></button>
+            <button onclick="editTask(this)"> <i class="fa-solid fa-pen-to-square" id="edit"></i></button> 
+            <button onclick="deleteTask(this)"> <i class="fa-solid fa-trash" id="delete"></i></button><br>
+            <div id="line"></div>
         `;
 
         tasklist.appendChild(li);
