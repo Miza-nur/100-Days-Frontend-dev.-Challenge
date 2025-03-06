@@ -4,7 +4,13 @@ const getWeather=()=>{
     const apiUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apikey}&units=metric`
 
     fetch(apiUrl)
-    .then(res=>res.json())
+    .then(res=>{
+        if(!res.ok){
+            throw new Error('City Not Found');
+
+        }
+        return res.json();
+    })
     .then(data =>{
         
         const weatherInfo=document.getElementById('weatherInfo');
@@ -21,8 +27,5 @@ const getWeather=()=>{
         <p>Humidity : ${humidity} &#x0025</p>
         <p>wind Speed : ${wind} m/s</p>
         `
-
-    
-    
     })
 } 
